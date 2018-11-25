@@ -51,16 +51,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |----|----|----|----|
    * |VAD |VAS | 3  |    |
    * |----|----|----|----|
-   * |   0|    |RST |    |
+   * |   0|    |END |    |
    * `-------------------'
    */
 [_FL] = LAYOUT_ortho_6x4(
   KC_LEFT,  KC_PGUP,   KC_MS_L,  KC_BTN1,\
   KC_DOWN,  KC_UP,  KC_MS_D,  KC_MS_U, \
   KC_RIGHT, KC_PGDOWN,  KC_MS_R,  KC_BTN2, \
-  RGB_SAD,  RGB_SAI,  BL_OFF,   KC_PPLS, \
-  RGB_VAD,  RGB_VAI,  KC_P3,    RESET,  \
-  KC_P0,  RESET   , RESET ,   RESET),
+  LGUI(LALT(KC_P1)),  LGUI(LALT(KC_P4)),  BL_OFF,   KC_PPLS, \
+  LGUI(LALT(KC_P2)),  LGUI(LALT(KC_F)),  LGUI(LALT(KC_P8)),    RESET,  \
+  LGUI(LALT(KC_P3)),  LGUI(LALT(KC_P6))   , KC_END ,   RESET),
 };
 
 
